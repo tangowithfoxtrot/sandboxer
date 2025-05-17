@@ -1,0 +1,13 @@
+[package]
+name = "sandboxer"
+version = "0.1.0"
+edition = "2024"
+
+[target.release]
+strip = true
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.38", features = ["derive", "env"] }
+clap_complete = "4.5.50"
+landlock = "0.4.2"
